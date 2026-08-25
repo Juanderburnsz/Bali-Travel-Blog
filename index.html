@@ -1,236 +1,427 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <!-- The title appears in the browser tab -->
-    <title>Bali Travel Blog</title>
-    <!-- Basic styling for the blog -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #009688;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        article {
-            margin-bottom: 30px;
-            text-align: justify;
-            text-indent: 5;
-        }
-        h2 {
-            color: #009688;
-            /* text-align: center; */
-        }
-        .date {
-            color: #888;
-            font-size: 0.9em;
-        }
-        p {
-            line-height: 1.6;
-            margin: 10px 0;
-            text-indent: 20px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bali Travel Blog | Island of the Gods</title>
+    <meta name="description" content="Adventures, field notes, and stories from Bali, Indonesia by John Bernal." />
+    <link rel="stylesheet" href="baliblog.css">
 </head>
 <body>
-    <!-- Header section with blog title -->
-    <header>
-        <h1>Bali Travel Blog</h1>
-        <p>Adventures and stories from the Island of the Gods</p>
-        <p>By John Bernal</p>
-        <p>May 24, 2025 - June 21, 2025</p>
+
+    <!-- Professional Hero Header with Dynamic Scroll Zoom & Blur -->
+    <header class="hero-header">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+            <span class="hero-badge">🌴 INDONESIA EXPEDITION 2025 • TRAVEL FIELD NOTES</span>
+            <h1 class="hero-title">Bali Travel <span>Blog</span></h1>
+            <p class="hero-subtitle">Adventures, cultural immersions, and unforgettable stories from the Island of the Gods</p>
+            
+            <div class="hero-meta">
+                <span class="meta-pill"><span class="icon">✍️</span> By John Bernal</span>
+                <span class="meta-pill"><span class="icon">🗓️</span> May 24 – June 21, 2025</span>
+                <span class="meta-pill"><span class="icon">📍</span> Bali, Indonesia</span>
+            </div>
+        </div>
+
+        <a href="#blog" class="hero-scroll-indicator" aria-label="Scroll to blog posts">
+            <span>Scroll Down</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
     </header>
+
+    <!-- Sticky Navigation Menu -->
+    <nav class="menu" aria-label="Main menu">
+        <button class="menu-button active" data-section="blog">📖 Travel Journal</button>
+        <button class="menu-button" data-section="about-me">👤 About Me</button>
+        <button class="menu-button" data-section="about-bali">🌺 About Bali</button>
+        <button class="menu-button" data-section="more">✨ More</button>
+        <button id="theme-button" class="theme-button" type="button" aria-label="Toggle dark mode">🌙 Dark mode</button>
+    </nav>
 
     <!-- Main content container -->
     <div class="container">
-        <!-- Blog post 1 -->
-        <article>
-            <h2>Day 0: Traveling from General Santos City, Philippines to Denpasar, Bali, Indonesia</h2>
-            <p1 class="date">May 24, 2025</p1>
-            <br><a href="https://www.google.com/maps/dir/General+Santos+International+Airport+(GES),+Filipino-American+Friendship+Avenue,+General+Santos+City+(Dadiangas),+South+Cotabato,+Philippines/Manila+International+Airport+(MNL),+Pasay+City,+Metro+Manila,+Philippines/@10.2436817,117.7572543,1707058m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x32f7a3b3e8357e83:0x45bc9e366ab2fcae!2m2!1d125.0982081!2d6.0611843!1m5!1m1!1s0x3397cec5d2bb4d77:0x8a24fa628a114411!2m2!1d121.016508!2d14.5122739!3e4?authuser=1&entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on Google Maps [GES to MNL]</a>
-            <br> <a href="https://www.google.com/maps/dir/Manila+International+Airport,+Pasay+City,+Metro+Manila,+Philippines/I+Gusti+Ngurah+Rai+International+Airport+(DPS),+Tuban,+Badung+Regency,+Bali/@7.3057924,117.7870549,3457512m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x3397cec5d2bb4d77:0x8a24fa628a114411!2m2!1d121.016508!2d14.5122739!1m5!1m1!1s0x2dd2441650216933:0xdf71da6ddd7bcc1f!2m2!1d115.1681655!2d-8.7469933!3e4?authuser=1&entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on Google Maps [MNL to DPS]</a>
-            <p> We are packed and ready, on our way to General Santos City International Airport (GES), I felt worried because on what might happen on the immigrations, and what might happen during our visit in Seminyak and Les. But apart from that, we were ecstatic and looking forward on the events that might happen during our stay in Bali. Upon arrival on General Santos City Airport, we took our last photo with our family for the month, and we head towards the gate where the guard checked our boarding pass and valid ID. After entering the gate, we proceeded to do the security checks, mainly by x-raying the bags. Once completed, we head towards the lounge and waited for our turn to board the plane.</p>
-            <p> Once we have boarded the plane, we flew our way to Manila International Airport (MNL), also known as 'Ninoy Aquino International Airport' (NAIA), Terminal 2. The flight was so smooth, that we didn't knew that the plane already touched the ground upon landing. So after we landed on NAIA, we got security checked for our transfer on Terminal 1, via a mini-bus. </p>
-            <p>After we arrived on Terminal 1, we had a lunch on Jollibee inside the terminal, and proceeded to the immigrations. Now this part is where I felt cold and nervous because I thought about what questions they may ask, and what should I answer. And lastly, is what if I was rejected in immigrations, because primarily I felt nervous. But, it turns out that I passed the immigrations, and I was very very relieved after that. </p>
-            <br><img src="blob:https://www.messenger.com/0d50e296-a970-4f7e-8ce2-018d96b37e0c" alt="Travelers waiting at General Santos City International Airport for a flight to Manila seated in a bright, spacious terminal with large windows and visible airport signage. The mood is calm and anticipatory." style="width:auto; height:350px; border-radius:8px; margin-top:10px;">
-            <br><img src="C:\Users\John Bernal\Downloads\dps.jpg" alt="Our arrival in I Ngurah Rai Int'l Airport in Denpasar" style="width:auto; height:350px; border-radius:8px; margin-top:10px;">
+        <main>
+            <!-- BLOG SECTION -->
+            <section id="blog" class="page-section">
+                
+                <!-- Blog post 1 (Day 0) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 May 24, 2025</span>
+                            <span class="post-location-tag">✈️ General Santos → Manila → Denpasar</span>
+                        </div>
+                        <h2 class="post-title">Day 0: Traveling from General Santos City, Philippines to Denpasar, Bali, Indonesia</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>We are packed and ready on our way to General Santos City International Airport (GES). I felt worried about what might happen at immigration and during our stay in Seminyak and Les. But apart from that, we were ecstatic and looking forward to all the adventures waiting for us in Bali. Upon arrival at General Santos City Airport, we took our last photo with our family for the month and headed towards the departure gate.</p>
+                        <p>Once we boarded the plane, we flew to Manila International Airport (NAIA Terminal 2). The flight was remarkably smooth. After landing at NAIA, we transferred via shuttle bus to Terminal 1, enjoyed a quick lunch at Jollibee, and proceeded to immigration. The anxiety melted away once cleared, and we boarded our international flight straight into I Gusti Ngurah Rai International Airport in Denpasar, Bali!</p>
+                        
+                        <div>
+                            <a href="https://www.google.com/maps/dir/General+Santos+International+Airport+(GES),+Filipino-American+Friendship+Avenue,+General+Santos+City+(Dadiangas),+South+Cotabato,+Philippines/Manila+International+Airport+(MNL),+Pasay+City,+Metro+Manila,+Philippines/@10.2436817,117.7572543,1707058m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x32f7a3b3e8357e83:0x45bc9e366ab2fcae!2m2!1d125.0982081!2d6.0611843!1m5!1m1!1s0x3397cec5d2bb4d77:0x8a24fa628a114411!2m2!1d121.016508!2d14.5122739!3e4" target="_blank" class="map-link-btn" rel="noopener noreferrer">🗺️ View GES to MNL on Google Maps</a>
+                            <a href="https://www.google.com/maps/dir/Manila+International+Airport,+Pasay+City,+Metro+Manila,+Philippines/I+Gusti+Ngurah+Rai+International+Airport+(DPS),+Tuban,+Badung+Regency,+Bali/@7.3057924,117.7870549,3457512m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x3397cec5d2bb4d77:0x8a24fa628a114411!2m2!1d121.016508!2d14.5122739!1m5!1m1!1s0x2dd2441650216933:0xdf71da6ddd7bcc1f!2m2!1d115.1681655!2d-8.7469933!3e4" target="_blank" class="map-link-btn" rel="noopener noreferrer">🗺️ View MNL to DPS on Google Maps</a>
+                        </div>
 
-        </article>
+                        <div class="post-media-grid">
+                            <div class="post-image-wrapper">
+                                <img src="images/airport.jpg" alt="Waiting for flight in General Santos City International Airport" class="post-image">
+                                <div class="image-caption">Waiting for our flight at General Santos City Int'l Airport</div>
+                            </div>
+                            <div class="post-image-wrapper">
+                                <img src="images/dps.jpg" alt="Arrival at I Gusti Ngurah Rai International Airport in Denpasar, Bali" class="post-image">
+                                <div class="image-caption">Touching down in Denpasar at I Gusti Ngurah Rai International Airport</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-        <!-- Blog post 2 -->
-        <article>
-            <h2>Day 1: Resting and Strolling at the Beachside in Seminyak</h2>
-            <p1 class="date">May 25, 2025</p1>
-            <p>
-                Walking through Sunset Beach in Seminyak during sunset to enjoy the beautiful view. The beach was lively with surfers and beachgoers. We stopped in La Plancha and ate dinner (pizza, beer, and hummus) and watched the sun dip below the horizon.
-            </p>
-        </article>
+                <!-- Blog post 2 (Day 1) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 May 25, 2025</span>
+                            <span class="post-location-tag">🏖️ Seminyak Beach & La Plancha</span>
+                        </div>
+                        <h2 class="post-title">Day 1: Resting and Strolling at the Beachside in Seminyak</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Walking through Sunset Beach in Seminyak during golden hour was pure magic. The coastline was filled with surfers riding the evening swell and travelers enjoying the vibrant atmosphere. We stopped at La Plancha, relaxed on the iconic colorful beanbags, ate dinner (wood-fired pizza, cold beer, and hummus), and watched the sun dip peacefully below the horizon.</p>
+                        
+                        <a href="https://www.google.com/maps/place/Seminyak,+Bali,+Indonesia/@-8.690958,115.169016,12z" target="_blank" class="map-link-btn" rel="noopener noreferrer">🗺️ View Seminyak on Google Maps</a>
 
-        <!-- Blog post 3 -->
-          <article>
-            <h2>Day 2: Surfing Lessons, and trying Indian Cuisine</h2>
-            <p1 class="date">May 26, 2025</p1>
-            <p>
-               It was a 
-            </p>
-        </article>
+                        <div class="post-media-grid">
+                            <div class="post-image-wrapper">
+                                <img src="images/seminyak-sunset.jpg" alt="Golden sunset over Seminyak beach with vibrant sky and waves" class="post-image">
+                                <div class="image-caption">Sunset over Seminyak beach coast</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-        <!-- Blog post 4 -->
-        <article>
-            <h2>Day 3: Last Day in Seminyak, Going to a Local Turtle Conservatory, and Travel to Les</h2>
-            <p1 class="date">May 27, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 3 (Day 2) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 May 26, 2025</span>
+                            <span class="post-location-tag">🏄 Kuta / Seminyak Waves</span>
+                        </div>
+                        <h2 class="post-title">Day 2: Surfing Lessons and Trying Indian Cuisine</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>A thrilling morning catching our first waves with local surf instructors along the coast. Balancing on the surfboard against the warm tropical breaks was exhilarating. After working up a huge appetite, we explored local dining spots and savored delicious, aromatic Indian dishes and curries.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 5 -->
-        <article>
-            <h2>Day 4: Resting in Les after a Long Trip, and having a Cultural Immersion with Students in ACS Singapore</h2>
-            <p1 class="date">May 28, 2025</p1>
-            <p>
-                 
-            </p>
-        </article>
+                <!-- Blog post 4 (Day 3) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 May 27, 2025</span>
+                            <span class="post-location-tag">🐢 Turtle Conservatory → 🚐 Travel to Les Village</span>
+                        </div>
+                        <h2 class="post-title">Day 3: Last Day in Seminyak, Local Turtle Conservatory, and Travel to Les</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>We packed our bags and bid farewell to vibrant Seminyak. Before heading north, we visited a local marine turtle conservation center to learn about rescue efforts and baby sea turtles. Afterwards, we embarked on a scenic drive through Bali's lush interior hills towards the tranquil coastal village of Les in North Bali.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 6 -->
-        <article>
-            <h2>Day 5: Snorkeling and ___ put smthn blah blah</h2>
-            <p1 class="date">May 29, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 5 (Day 4) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 May 28, 2025</span>
+                            <span class="post-location-tag">🤝 Les Village & ACS Singapore</span>
+                        </div>
+                        <h2 class="post-title">Day 4: Resting in Les & Cultural Immersion with ACS Singapore Students</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>After a restful night surrounded by nature in Les, we joined students from Anglo-Chinese School (ACS) Singapore for an enriching cultural immersion day. We shared stories, exchanged insights on student life, and experienced traditional Balinese hospitality in the village.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 7 -->
-        <article>
-            <h2>Day 6: Arrival of Carroll University, and Snorkeling after</h2>
-            <p1 class="date">May 30, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 6 (Day 5) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 May 29, 2025</span>
+                            <span class="post-location-tag">🤿 Les Reef</span>
+                        </div>
+                        <h2 class="post-title">Day 5: Snorkeling the Living Reefs of Les Village</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Exploring the restored coral reefs in Les. The crystal clear waters revealed colorful clownfish, sea anemones, and thriving marine conservation projects run by the local community.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 8 -->
-        <article>
-            <h2>Day 7: Puseh Temple and Waterfall trip, along with a Language Exchange</h2>
-            <p1 class="date">May 31, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
-         
-        <!-- Blog post 9 -->
-        <article>
-            <h2>Day 8: Family Day and Spirulina Greenhouse making</h2>
-            <p1 class="date">June 1, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 7 (Day 6) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 May 30, 2025</span>
+                            <span class="post-location-tag">🎓 Carroll University Arrival</span>
+                        </div>
+                        <h2 class="post-title">Day 6: Arrival of Carroll University & Afternoon Snorkeling</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Welcoming the student and faculty group from Carroll University to Les! We oriented them around the grounds and celebrated their arrival with an afternoon snorkel session along the coastline.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 10 -->
-        <article>
-            <h2>Day 9: Beji Temple and Sekumpul Waterfall hike</h2>
-            <p1 class="date">June 2, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 8 (Day 7) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 May 31, 2025</span>
+                            <span class="post-location-tag">🛕 Puseh Temple & Yeh Mampeh Waterfall</span>
+                        </div>
+                        <h2 class="post-title">Day 7: Puseh Temple & Waterfall Expedition with Language Exchange</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>We journeyed to the historic Puseh Temple, honoring local customs with traditional sarongs, followed by a hike to the majestic Yeh Mampeh waterfall in Les. In the afternoon, we held an engaging language exchange session with local youth.</p>
+                        
+                        <div class="post-media-grid">
+                            <div class="post-image-wrapper">
+                                <img src="images/bali-temple.jpg" alt="Traditional Balinese Temple architecture" class="post-image">
+                                <div class="image-caption">Balinese Temple stone carving and sacred architecture</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-        <!-- Blog post 11 -->
-        <article>
-            <h2>Day 10: Second Yoga Class, Snorkel Bingo, and Building the Fence of a Spirulina Greenhouse</h2>
-            <p1 class="date">June 3, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 9 (Day 8) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 1, 2025</span>
+                            <span class="post-location-tag">🌱 Sustainable Farming</span>
+                        </div>
+                        <h2 class="post-title">Day 8: Family Day and Spirulina Greenhouse Construction</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Hands-on sustainability work building the framework for a community spirulina greenhouse to support local nutrition and eco-farming initiatives.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 12 -->
-         <article>
-            <h2>Day 11: Menjangan Island (Deer Island) Adventure</h2>
-            <p1 class="date">June 4, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 10 (Day 9) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 2, 2025</span>
+                            <span class="post-location-tag">🌊 Beji Temple & Sekumpul Waterfalls</span>
+                        </div>
+                        <h2 class="post-title">Day 9: Beji Temple & Sekumpul Waterfall Hike</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>A breathtaking trek down to the multi-tiered Sekumpul Waterfalls, surrounded by towering emerald canyons and mist. We also visited the ancient stone relief carvings of Pura Beji Sangsit.</p>
+                        
+                        <div class="post-media-grid">
+                            <div class="post-image-wrapper">
+                                <img src="images/bali-rice-terrace.jpg" alt="Lush green Balinese rice terraces" class="post-image">
+                                <div class="image-caption">Lush tropical terraces and valleys of Northern Bali</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-        <!-- Blog post 13 -->
-        <article>
-            <h2>Day 12: Silkscreen Painting, Amisewaka Technical School Tour, Coral Planting on Coral Tables, and Last Language Exchange Class</h2>
-            <p1 class="date">June 5, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 11 (Day 10) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 3, 2025</span>
+                            <span class="post-location-tag">🧘 Yoga & Marine Biology</span>
+                        </div>
+                        <h2 class="post-title">Day 10: Morning Yoga, Snorkel Bingo, & Spirulina Fence Building</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>A restorative sunrise yoga session followed by an educational 'Snorkel Bingo' identifying fish species on the reef and finishing up greenhouse fencing work.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 14 -->
-       <article>
-            <h2>Day 13: Organic Pesticide Making, CU's Final day in Les, and Balinese Dances</h2>
-            <p1 class="date">June 6, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
-        
-        <!-- Blog post 15 -->
-       <article>
-            <h2>Day 14: Mt. Batur Hike and Trip to Ubud</h2>
-            <p1 class="date">June 7, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
+                <!-- Blog post 12 (Day 11) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 4, 2025</span>
+                            <span class="post-location-tag">🏝️ Menjangan Island National Marine Park</span>
+                        </div>
+                        <h2 class="post-title">Day 11: Menjangan Island (Deer Island) Adventure</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Boat trip to the pristine waters of Menjangan Island in West Bali National Park. World-class wall diving and snorkeling with incredible underwater visibility and wild deer roaming the beaches.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 16 -->
-       <article>
-            <h2>Day 15: Visiting a Local Mask Maker</h2>
-            <p1 class="date">June 8, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>         
+                <!-- Blog post 13 (Day 12) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 5, 2025</span>
+                            <span class="post-location-tag">🎨 Amisewaka Technical School & Coral Tables</span>
+                        </div>
+                        <h2 class="post-title">Day 12: Silkscreen Painting, Amisewaka Tour, and Coral Propagation</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>A creative day doing traditional silkscreen printmaking, touring the vocational hospitality programs at Amisewaka Technical School, and transplanting live coral fragments onto underwater propagation tables.</p>
+                    </div>
+                </article>
 
-        <!-- Blog post 17 -->
-       <article>
-            <h2>Day 16: Scarf and T-shirt Dyeing</h2>
-            <p1 class="date">June 9, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
-        
-        <!-- Blog post 18 -->
-       <article>
-            <h2>Day 17: Last Day of CU in Bali, Interview Time, Return to Les</h2>
-            <p1 class="date">June 10, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>
-        
-        <!-- Blog post 19 -->
-       <article>
-            <h2>Day 18: </h2>
-            <p1 class="date">June 11, 2025</p1>
-            <p>
-                Put text here
-            </p>
-        </article>         
+                <!-- Blog post 14 (Day 13) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 6, 2025</span>
+                            <span class="post-location-tag">🎭 Cultural Celebration</span>
+                        </div>
+                        <h2 class="post-title">Day 13: Organic Pesticide Making, CU Farewell, & Traditional Dances</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Crafting natural botanical pest solutions with local farmers followed by an unforgettable farewell evening featuring hypnotic Balinese music and traditional Legong and Barong performances.</p>
+                    </div>
+                </article>
+
+                <!-- Blog post 15 (Day 14) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 7, 2025</span>
+                            <span class="post-location-tag">🌋 Mount Batur & Ubud</span>
+                        </div>
+                        <h2 class="post-title">Day 14: Mt. Batur Sunrise Hike and Journey to Cultural Ubud</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Early 3:00 AM trek ascending the volcanic slopes of Mount Batur to watch the sunrise above the clouds over Lake Batur, followed by traveling to the cultural heart of Ubud.</p>
+                    </div>
+                </article>
+
+                <!-- Blog post 16 (Day 15) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 8, 2025</span>
+                            <span class="post-location-tag">🎭 Ubud Artisan Village</span>
+                        </div>
+                        <h2 class="post-title">Day 15: Visiting Master Balinese Mask Makers</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>An eye-opening visit with master woodcarvers sculpting sacred Topeng dance masks from hibiscus and pule wood in their open-air family compound.</p>
+                    </div>
+                </article>
+
+                <!-- Blog post 17 (Day 16) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 9, 2025</span>
+                            <span class="post-location-tag">🧵 Natural Batik & Dyeing</span>
+                        </div>
+                        <h2 class="post-title">Day 16: Scarf and Textile Botanical Dyeing Workshop</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Learning ancient Indonesian indigo and plant-based fabric dye techniques to create custom patterned scarves and t-shirts.</p>
+                    </div>
+                </article>
+
+                <!-- Blog post 18 (Day 17) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 10, 2025</span>
+                            <span class="post-location-tag">🎙️ Reflections & Return to Les</span>
+                        </div>
+                        <h2 class="post-title">Day 17: Interviews, Final Reflections, and Journey Back North</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Conducting interviews to document the insights gained during the research expedition, concluding group projects, and returning to Les village.</p>
+                    </div>
+                </article>
+
+                <!-- Blog post 19 (Day 18) -->
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-meta-row">
+                            <span class="post-date">📅 June 11, 2025</span>
+                            <span class="post-location-tag">🌅 Final Sunset in Paradise</span>
+                        </div>
+                        <h2 class="post-title">Day 18: Final Reflections & Looking Back at Bali</h2>
+                    </div>
+                    <div class="post-body">
+                        <p>Taking in the peaceful coastal breeze, reviewing journal notes and photographs, and cherishing the incredible people and culture that made this month in Indonesia so profound.</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- ABOUT ME SECTION -->
+            <section id="about-me" class="page-section hidden">
+                <div class="info-card">
+                    <div class="section-header">
+                        <h2>About the Author</h2>
+                        <p>Student, Explorer, & Technology Enthusiast</p>
+                    </div>
+                    <p>Hello! I am <strong>John Bernal</strong>, a 4th-year student taking a Bachelor of Science in Computer Applications, with a specialization in the Internet of Things (IoT).</p>
+                    <p>This travel journal chronicles my month-long expedition across Bali, Indonesia in 2025 — exploring everything from the bustling surf coasts of Seminyak to cultural immersion and marine reef restoration projects in Les Village, North Bali.</p>
+                    <p>When I'm not writing code or building IoT hardware, I love documenting travels, photographing landscapes, and learning about diverse cultures around the world.</p>
+                </div>
+            </section>
+
+            <!-- ABOUT BALI SECTION -->
+            <section id="about-bali" class="page-section hidden">
+                <div class="info-card">
+                    <div class="section-header">
+                        <h2>About Bali, Indonesia</h2>
+                        <p>The Island of the Gods</p>
+                    </div>
+                    <p>Bali is a world-renowned Indonesian island celebrated for its dramatic volcanic mountains, iconic rice paddies, vibrant coral reefs, and deeply rooted spiritual heritage.</p>
+                    
+                    <div class="bali-highlights-grid">
+                        <div class="highlight-item">
+                            <img src="images/seminyak-sunset.jpg" alt="Bali Coast and Beaches" class="highlight-img">
+                            <div class="highlight-text">
+                                <h3>Beaches & Surf</h3>
+                                <p>From legendary surf breaks in Uluwatu and Seminyak to tranquil black sand shores in North Bali.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <img src="images/bali-temple.jpg" alt="Ancient Balinese Temple" class="highlight-img">
+                            <div class="highlight-text">
+                                <h3>Ancient Temples</h3>
+                                <p>Over 20,000 sacred shrines and temples, including cliffside Uluwatu and lakeside Ulun Danu Bratan.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <img src="images/bali-rice-terrace.jpg" alt="Tegallalang Rice Terraces" class="highlight-img">
+                            <div class="highlight-text">
+                                <h3>Subak Irrigation</h3>
+                                <p>UNESCO-recognized ancient water management and emerald green terrace systems across the island.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MORE SECTION -->
+            <section id="more" class="page-section hidden">
+                <div class="info-card">
+                    <div class="section-header">
+                        <h2>More Adventures & Resources</h2>
+                        <p>Upcoming travel logs and media</p>
+                    </div>
+                    <p>Stay tuned for high-resolution photo galleries, travel guides, equipment packing lists, and detailed breakdown articles on IoT applications in environmental conservation.</p>
+                </div>
+            </section>
+        </main>
     </div>
-    <!-- End of main content -->
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Bali Travel Blog • Documented by John Bernal • Island of the Gods</p>
+    </footer>
+
+    <!-- Interactive Parallax & Tab Logic -->
+    <script src="script.js"></script>
 </body>
 </html>
